@@ -1,0 +1,10 @@
+[1] Bahasa Pemrograman Go
+Go Language merupakan kepanjangan dari bahasa pemrograman satu ini language. Seperti kita tahu namanya diawali dengan Go, ya benar dia merupakan bahasa pemrograman yang dikelola oleh Google. Google tidak bekerja sendirian, melainkan bekerja sama dengan 3 orang tokoh handal pada tahun 2009.  Robert Griesemer, Rob Pike dan Ken Thompson merupakan ketiga tokoh tersebut.  Bahasa pemrograman satu ini bisa diketik secara statis dan dapat menghasilkan kode-kode biner pada mesin yang dikompilasikan dengannya.  Berasal dari abad ke-21, bahasa pemrograman Golang berusaha menghimpun bahasa-bahasa pemrograman pendahulunya. Pembuatan website, aplikasi maupun software juga bisa menggunakan bahasa pemrograman ini.
+
+[2]
+
+[3]
+
+[4]
+
+[5]
