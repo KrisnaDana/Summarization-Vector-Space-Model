@@ -1,10 +1,14 @@
 [1] Bahasa Pemrograman Go
 Go Language merupakan kepanjangan dari bahasa pemrograman satu ini language. Seperti kita tahu namanya diawali dengan Go, ya benar dia merupakan bahasa pemrograman yang dikelola oleh Google. Google tidak bekerja sendirian, melainkan bekerja sama dengan 3 orang tokoh handal pada tahun 2009.  Robert Griesemer, Rob Pike dan Ken Thompson merupakan ketiga tokoh tersebut.  Bahasa pemrograman satu ini bisa diketik secara statis dan dapat menghasilkan kode-kode biner pada mesin yang dikompilasikan dengannya.  Berasal dari abad ke-21, bahasa pemrograman Golang berusaha menghimpun bahasa-bahasa pemrograman pendahulunya. Pembuatan website, aplikasi maupun software juga bisa menggunakan bahasa pemrograman ini.
 
-[2]
+[2] Augmentasi
+Augmentasi yaitu teknik untuk memperluas dan memanipulasi dataset yang ada dengan tujuan meningkatkan keanekaragaman, mencegah overfitting, dan meningkatkan performa model machine learning. Augmentasi pada umumnya digunakan dalam berbagai bidang, termasuk pengolahan gambar, pemrosesan teks, dan analisis data. Tujuan utamanya adalah menghasilkan variasi data baru yang mirip dengan data asli tetapi memiliki perubahan yang terkontrol.
 
-[3]
+[3] Data Preprocessing
+Data preprocessing adalah tahap penting dalam analisis data di mana data mentah yang diperoleh dari sumber eksternal dipersiapkan dan diubah menjadi format yang lebih cocok dan siap untuk diproses oleh model atau algoritma machine learning. Tujuan dari data preprocessing adalah untuk meningkatkan kualitas data, mengurangi kesalahan, menangani nilai yang hilang atau tidak valid, serta mengubah data menjadi representasi yang lebih tepat untuk analisis lebih lanjut.
 
-[4]
+[4] Deep Learning
+Deep learning adalah sub-bidang dalam pembelajaran mesin (machine learning) yang berfokus pada pengembangan dan penerapan algoritma pembelajaran mesin yang menggunakan arsitektur jaringan saraf tiruan yang dalam (deep neural networks). Deep learning bertujuan untuk mengajarkan komputer untuk belajar secara mandiri melalui pemrosesan data yang kompleks dan representasi hierarkis.
 
-[5]
+[5] Batik
+Batik telah menjadi warisan budaya yang penting di banyak negara, termasuk Indonesia, Malaysia, Thailand, dan beberapa negara di Afrika. Setiap daerah memiliki gaya dan motif batik yang khas, mencerminkan kekayaan budaya dan tradisi mereka. Batik adalah seni tradisional pembuatan kain yang menggunakan teknik pewarnaan khusus untuk menciptakan pola-pola indah dan unik. Proses pembuatan batik melibatkan penutupan sebagian area kain dengan lilin atau bahan penghalang lainnya, sehingga pola yang diinginkan tetap terjaga saat pewarnaan dilakukan.
