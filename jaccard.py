@@ -84,9 +84,6 @@ def text_preprocessing(text):
     words = [word_tokenize(word) for word in sentences]
     print(f"\nTOKENIZE TO WORDS\n>>",words)
 
-    #REMOVE DUPLICATE WORDS
-    words = [set(word) for word in words]
-    print(f"\nREMOVE DUPLICATE WORDS\n>>",words)
 
     return words
 
