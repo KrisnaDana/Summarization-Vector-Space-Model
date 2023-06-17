@@ -15,7 +15,9 @@ def submit():
     title = request.form['judul']
     text = request.form['teks']
     count = request.form['jumlah']
+
     # result = jaccard.main(title, text, count)
     # result = tf_idf.main(title, text, count)
-    result = svd.main(title, text, count) # SVD (Singular Value Decomposition) 
+    result = svd.main(title, text, count) # SVD (Singular Value Decomposition)
+
     return render_template('index.html', judul=title, teks=text, jumlah=count, hasil=result)

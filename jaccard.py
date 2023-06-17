@@ -124,7 +124,7 @@ def result(ranking, real_text, count):
                 temp.append(real_text[rank[0]])
                 break
     result = ' '.join([str(t) for t in temp])
-    print(f"\>>",result,"\n\n\n")
+    print(f">>",result,"\n\n\n")
     return result
 
 def main(title, text, count):
