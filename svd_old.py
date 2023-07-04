@@ -3,7 +3,7 @@ import re
 from Sastrawi.StopWordRemover.StopWordRemoverFactory import StopWordRemoverFactory
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.decomposition import TruncatedSVD
 
 def real_text_preprocessing(text):
     return sent_tokenize(text)
@@ -50,7 +50,7 @@ def text_preprocessing(text):
     return sentences
 
 
-def tf_idf(text):
+def svd(text):
     print("\n\n=======================================")
     print("TF-IDF")
     print("=======================================")
@@ -58,19 +58,20 @@ def tf_idf(text):
     text_matrix = vectorizer.fit_transform(text)
     print(f"\nMATRIX TF IDF TEXT\n>>",text_matrix.toarray())
 
-    similarity_matrix = cosine_similarity(text_matrix, text_matrix)
+    svd = TruncatedSVD(n_components=2)  # Jumlah komponen
+    text_matrix = svd.fit_transform(text_matrix)
 
-    print(f"\nSIMILARITY MATRIX\n>>",similarity_matrix)
-    return similarity_matrix
+    print(f"\nSVD MATRIX\n>>",text_matrix)
+    return text_matrix
 
-def result(similarity_matrix, real_text, count):
+def result(text_matrix, real_text, count):
     print("\n\n=======================================")
     print("RANKING SCORE")
     print("=======================================")
-    sentence_scores = list(enumerate(similarity_matrix[0]))
+    sentence_scores = [(i, score) for i, score in enumerate(text_matrix[:, 0])]
     sentence_scores = sorted(sentence_scores, key=lambda x: x[1], reverse=True)
     top_sentences = sentence_scores[0:int(count)]
-
+    top_sentences = sorted(top_sentences, key=lambda x: x[0])
     print(f">>",top_sentences)
 
     print("\n\n=======================================")
@@ -85,6 +86,6 @@ def result(similarity_matrix, real_text, count):
 def main(title, text, count):
     real_text = real_text_preprocessing(text)
     text = text_preprocessing(text)
-    similarity_matrix = tf_idf(text)
+    similarity_matrix = svd(text)
     summary = result(similarity_matrix, real_text, count)
     return summary
